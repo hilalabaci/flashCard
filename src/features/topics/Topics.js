@@ -1,17 +1,16 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import ROUTES from "../../app/routes";
-// import selector
 import { useSelector } from "react-redux";
 import { selectTopics } from "./topicsSlice";
 import { v4 as uuidv4 } from "uuid";
 
 let uniqueId = uuidv4();
 
-console.log(uniqueId); // Prints '1b9d6bcd-bbfd-4b2d-9b5d-ab8dfbbd4bed'
+console.log(uniqueId);
 
 export default function Topics() {
-  const topics = useSelector(selectTopics); // replace this with a call to your selector to select all the topics in state
+  const topics = useSelector(selectTopics);
 
   return (
     <section className="center">

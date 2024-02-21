@@ -1,15 +1,14 @@
 import React, { useState } from "react";
 import { useSelector } from "react-redux";
-// import selector
 import { v4 as uuidv4 } from "uuid";
 import { selectCards } from "./cardsSlice";
 
 let uniqueId = uuidv4();
 
-console.log(uniqueId); // Prints '1b9d6bcd-bbfd-4b2d-9b5d-ab8dfbbd4bed'
+console.log(uniqueId);
 
 export default function Card({ id }) {
-  const cards = useSelector(selectCards); // replace this with a call to your selector to get a card by id
+  const cards = useSelector(selectCards);
   const card = cards[id];
   const [flipped, setFlipped] = useState(false);
 

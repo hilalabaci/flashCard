@@ -2,16 +2,15 @@ import React from "react";
 import { useSelector } from "react-redux";
 import { Link } from "react-router-dom";
 import ROUTES from "../../app/routes";
-// import quiz selector
 import { v4 as uuidv4 } from "uuid";
 import { selectQuizzes } from "./quizzesSlice";
 
 let uniqueId = uuidv4();
 
-console.log(uniqueId); // Prints '1b9d6bcd-bbfd-4b2d-9b5d-ab8dfbbd4bed'
+console.log(uniqueId);
 
 export default function Quizzes() {
-  const quizzes = useSelector(selectQuizzes); // replace this with a call to your selector to get all the quizzes in state
+  const quizzes = useSelector(selectQuizzes);
   return (
     <section className="center">
       <h1>Quizzes</h1>
