@@ -2,7 +2,7 @@ import { createSlice } from "@reduxjs/toolkit";
 import { addQuiz } from "../quizzes/quizzesSlice";
 
 export const topicsSlice = createSlice({
-  name: "topics",
+  name: "topicsSlice",
   initialState: {
     topics: {},
   },
