@@ -1,5 +1,3 @@
 
 node_modules
-src/features/.DS_Store
-src/.DS_Store
-.DS_Store
+**/.DS_Store
